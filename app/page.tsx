@@ -1,18 +1,20 @@
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen gap-6">
-      <h1 className="text-4xl font-bold">Aaron Li</h1>
+      <div style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}>
+        <h1 className="text-4xl font-bold">Aaron Li</h1>
+      
 
       <p className="text-lg text-gray-600">
-        Computer Science Student | Developer
+        3rd Computer Science Student at RIT | Still exploring Software Engineer roles!
       </p>
 
       <div className="flex gap-4">
-        <a href="https://github.com/yourgithub" className="underline">
+        <a href="https://github.com/AAzurez" className="underline">
           GitHub
         </a>
 
-        <a href="https://linkedin.com/in/yourlinkedin" className="underline">
+        <a href="https://linkedin.com/in/aaronli5370" className="underline">
           LinkedIn
         </a>
       </div>
@@ -21,9 +23,10 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Projects</h2>
 
         <p className="text-gray-600">
-          Dice Detection using OpenCV, algorithm practice, and more.
+          Still working on this! :D Stay Tuned!
         </p>
       </section>
+     </div>
     </main>
   );
 }
