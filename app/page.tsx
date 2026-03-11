@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen gap-6">
       <div style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}>
-        <h1 className="text-4xl font-bold">Aaron Li</h1>
+        <h1 className="text-4xl font-bold">Test Aaron Li</h1>
       
 
       <p className="text-lg text-gray-600">
