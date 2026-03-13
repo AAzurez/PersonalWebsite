@@ -1,32 +1,61 @@
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen gap-6">
-      <div style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}>
-        <h1 className="text-4xl font-bold">Test2 Aaron Li</h1>
-      
+    <div className="flex min-h-screen">
 
-      <p className="text-lg text-gray-600">
-        3rd Computer Science Student at RIT | Still exploring Software Engineer roles!
-      </p>
-
-      <div className="flex gap-4">
-        <a href="https://github.com/AAzurez" className="underline">
-          GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/aaronli5370" className="underline">
-          LinkedIn
-        </a>
+      {/* Sidebar */}
+      <div className="w-1/4 bg-slate-900 text-white text-center p-6">
+        <ul className="space-y-3">
+          <li><a href="#" className="hover:text-blue-400">Home</a></li>
+          <li><a href="#projects" className="hover:text-blue-400">Projects</a></li>
+          <li><a href="#about" className="hover:text-blue-400">About</a></li>
+          <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+        </ul>
       </div>
 
-      <section className="mt-10 max-w-xl text-center">
-        <h2 className="text-2xl font-semibold">Projects</h2>
+      {/* Main Content */}
+      <main className="w-3/4 flex flex-col bg-slate-900 gap-6 p-10">
 
-        <p className="text-gray-600">
-          Still working on this! :D Stay Tuned!
-        </p>
-      </section>
-     </div>
-    </main>
+        <div style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive'}}>
+
+          <h1 className="text-4xl text-[#007FFF] font-bold text-left">
+            Icon Aaron Li
+          </h1>
+
+          <div className="flex gap-4 justify text-white mt-4">
+            <a href="https://github.com/AAzurez" className="underline">
+              GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/aaronli5370" className="underline">
+              LinkedIn
+            </a>
+          </div>
+
+          <section id="projects" className="mt-10 max-w-xl text-left text-white">
+            <h2 className="text-2xl font-semibold">Bio</h2>
+            <p className="text-white">
+              Still working on this! :D Stay Tuned!
+            </p>
+          </section>
+
+          <section id="projects" className="mt-10 max-w-xl text-left text-white">
+            <h2 className="text-2xl font-semibold">Projects</h2>
+            <p className="text-white">
+              Still working on this! :D Stay Tuned!
+            </p>
+          </section>
+
+          <section id="about" className="mt-10 max-w-xl text-left">
+            <h2 className="text-2xl font-semibold text-white">Another Section!</h2>
+            <p className="text-white">
+              Still working on this! :D Stay Tuned!
+            </p>
+          </section>
+
+        </div>
+
+      </main>
+
+    </div>
   );
 }
