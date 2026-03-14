@@ -5,9 +5,9 @@ export default function Home() {
     <div className="flex min-h-screen">
 
       {/* Sidebar */}
-      <div className="w-1/4 bg-slate-900 text-white text-center p-6">
-        <ul className="space-y-3">
-          <li><a href="#" className="hover:text-blue-400">Home</a></li>
+      <div className="w-1/4 sticky top-0 h-screen bg-slate-900 text-white flex justify-center text-center items-center p-6">
+        <ul className="space-y-8 text-lg text-center items-center">
+          <li><a href="#" className="hover:text-blue-400 items-center">Home</a></li>
           <li><a href="#projects" className="hover:text-blue-400">Projects</a></li>
           <li><a href="#about" className="hover:text-blue-400">About</a></li>
           <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
@@ -64,7 +64,7 @@ export default function Home() {
           </section>
 
           <section id="about" className="mt-10 max-w-xl text-left">
-            <h2 className="text-2xl font-semibold text-white">Another Section!</h2>
+            <h2 className="text-2xl font-semibold text-white">Expierence</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
