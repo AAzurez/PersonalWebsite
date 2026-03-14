@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -20,24 +21,24 @@ export default function Home() {
         <div style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive'}}>
 
           <h1 className="text-4xl text-[#007FFF] font-bold text-left">
-            Icon Aaron Li
+            Icon Aaron Li AAzure
           </h1>
 
           <div className="flex gap-4 justify text-white mt-4">
             <a href="https://github.com/AAzurez" className="underline">
               <Image
                 src="/github.jpg"
-                alt="Aaron Li"
+                alt=""
                 width={50}
                 height={50}
                 className="rounded-lg"
               />
             </a>
 
-            <a href="https://linkedin.com/in/aaronli5370" className="underline">
+            <a href="https://linkedin.com/in/aaronli5370">
               <Image
                 src="/linkedin.jpg"
-                alt="Aaron Li"
+                alt=""
                 width={50}
                 height={50}
                 className="rounded-lg"
@@ -45,21 +46,28 @@ export default function Home() {
             </a>
           </div>
 
-          <section id="projects" className="mt-10 max-w-xl text-left text-white">
-            <h2 className="text-2xl font-semibold">Bio</h2>
+          <section id="bio" className="mt-10 max-w-xl text-left text-white">
+            <h2 className="text-2xl font-semibold">Heyo!</h2>
             <p className="text-white">
-              Still working on this! :D Stay Tuned!
+              insert bio :/
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               White space
             </p>
           </section>
 
-          <section id="projects" className="mt-10 max-w-xl text-left text-white">
-            <h2 className="text-2xl font-semibold">Projects</h2>
-            <p className="text-white">
-              Still working on this! :D Stay Tuned!
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              HALLO
+          <section id="projects" className="mt-20">
+            <h2 className="text-2xl font-bold mb-6 text-white">
+              Projects
+            </h2>
+            <p className="text-black">
+              <div className="max-w-6xl mx-auto grid grid-cols-3 gap-8">
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+              </div>
             </p>
           </section>
 
