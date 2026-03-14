@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen">
@@ -23,11 +25,23 @@ export default function Home() {
 
           <div className="flex gap-4 justify text-white mt-4">
             <a href="https://github.com/AAzurez" className="underline">
-              GitHub
+              <Image
+                src="/github.jpg"
+                alt="Aaron Li"
+                width={50}
+                height={50}
+                className="rounded-lg"
+              />
             </a>
 
             <a href="https://linkedin.com/in/aaronli5370" className="underline">
-              LinkedIn
+              <Image
+                src="/linkedin.jpg"
+                alt="Aaron Li"
+                width={50}
+                height={50}
+                className="rounded-lg"
+              />
             </a>
           </div>
 
@@ -35,6 +49,8 @@ export default function Home() {
             <h2 className="text-2xl font-semibold">Bio</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              White space
             </p>
           </section>
 
@@ -42,6 +58,8 @@ export default function Home() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              HALLO
             </p>
           </section>
 
@@ -49,6 +67,8 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-white">Another Section!</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              Zzzzz
             </p>
           </section>
 
