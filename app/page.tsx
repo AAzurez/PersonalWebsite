@@ -1,18 +1,43 @@
+"use client"
 import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
+import { useState,useEffect } from "react"
 
 export default function Home() {
+
+  const [active,setActive] = useState("home")
+  
   return (
     <div className="flex min-h-screen">
 
       {/* Sidebar */}
       <div className="w-1/6 sticky top-0 h-screen bg-slate-900 text-white flex justify-center text-center items-center p-6">
-        <ul className="space-y-8 text-lg text-center items-center">
-          <li><a href="#" className="hover:text-blue-400 items-center">Home</a></li>
-          <li><a href="#projects" className="hover:text-blue-400">Projects</a></li>
-          <li><a href="#about" className="hover:text-blue-400">About</a></li>
-          <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+        <ul className="space-y-8 text-lg text-center items-center hover:text-blue-400">
+          <li>
+            <a href="#home">
+            {active === "●" && "home"}
+            Home
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              {active === "●" && "projects"}
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+            {active === "●" && "about"}
+            About
+            </a>
+          </li>
+          <li><a href="#contact">
+            {active === "●" && "contact"}
+            Contact
+            </a>
+          </li>
         </ul>
+
       </div>
 
       {/* Main Content */}
@@ -93,7 +118,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="about" className="mt-10 max-w-xl text-left">
+          <section id="expierence" className="mt-10 max-w-xl text-left">
             <h2 className="text-2xl font-semibold text-white">Expierence</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
@@ -101,7 +126,7 @@ export default function Home() {
               Zzzzz
             </p>
           </section>
-           <section id="about" className="mt-10 max-w-xl text-left">
+           <section id="contact" className="mt-10 max-w-xl text-left">
             <h2 className="text-2xl font-semibold text-white">Contacts</h2>
             <p className="text-white">
               Email: aaronli5370@gmail.com
