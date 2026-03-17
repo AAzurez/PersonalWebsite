@@ -7,6 +7,29 @@ export default function Home() {
 
   const [active,setActive] = useState("home")
   
+  //Taskbar transions
+  useEffect(() => {
+  const handleScroll = () => {
+    const sections = ["bio", "projects", "expierence", "contact"]
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section)
+
+      if (element) {
+        const rect = element.getBoundingClientRect()
+
+        if (rect.top <= 200 && rect.bottom >= 200) {
+          setActive(section)
+        }
+      }
+    })
+  }
+
+  window.addEventListener("scroll", handleScroll)
+
+  return () => window.removeEventListener("scroll", handleScroll)
+}, [])
+
   return (
     <div className="flex min-h-screen">
 
@@ -15,24 +38,24 @@ export default function Home() {
         <ul className="space-y-8 text-lg text-center items-center hover:text-blue-400">
           <li>
             <a href="#home">
-            {active === "●" && "home"}
+            {active === "bio" && "● "}
             Home
             </a>
           </li>
           <li>
             <a href="#projects">
-              {active === "●" && "projects"}
-              Projects
+              {active === "projects" && "● "}
+               Projects
             </a>
           </li>
           <li>
-            <a href="#about">
-            {active === "●" && "about"}
+            <a href="#expierence">
+            {active === "expierence" && "● "}
             About
             </a>
           </li>
           <li><a href="#contact">
-            {active === "●" && "contact"}
+            {active === "contact" && "● "}
             Contact
             </a>
           </li>
@@ -63,6 +86,15 @@ export default function Home() {
             <a href="https://linkedin.com/in/aaronli5370">
               <Image
                 src="/linkedin.jpg"
+                alt=""
+                width={50}
+                height={50}
+                className="rounded-lg hover:brightness-200 transition"
+              />
+            </a>
+            <a href="https://www.instagram.com/aazurezz/">
+              <Image
+                src="/insta.jpg"
                 alt=""
                 width={50}
                 height={50}
@@ -122,7 +154,7 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-white">Expierence</h2>
             <p className="text-white">
               Still working on this! :D Stay Tuned!
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br />dadadad<br />dadadada<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />dadadada<br /><br />dadadad<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               Zzzzz
             </p>
           </section>
