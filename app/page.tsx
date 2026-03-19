@@ -153,9 +153,21 @@ export default function Home() {
           <section id="expierence" className="mt-10 max-w-xl text-left">
             <h2 className="text-2xl font-semibold text-white">Expierence</h2>
             <p className="text-white">
-              Still working on this! :D Stay Tuned!
-              <br />dadadad<br />dadadada<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />dadadada<br /><br />dadadad<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              Zzzzz
+              Pegasus Place | July 2025 - Aug 2025
+              <br/>
+              Education Manager | Brooklyn, NY
+              <br/>
+              ● Designed modular learning workflow for 25+ students using ELI5 and Feynman methods to boost reasoning.<br/>
+              ● Built assessment systems with Google Forms to analyze performance data and drive instructional improvements.<br/>
+              ● Migrated 50+ students to a fully remote learning setup, maintaining engagement and academic continuity.<br/>
+              <br/>
+              Infinity Educational Programs | July 2025 - Aug 2025
+              <br/>
+              Website Designer | Remote
+              <br/>
+              ● Built small-scale websites on environmental topics using HTML and CSS, focusing on responsive layout.<br/>
+              ● Founded prototype e-commerce brand using Squarespace and Canva implementing UX improvements.<br/>
+              ● Built dashboards and heatmaps in Google Data Studio to analyze internet and mobile usage in 250+ countries.<br/>
             </p>
           </section>
            <section id="contact" className="mt-10 max-w-xl text-left">
