@@ -111,7 +111,7 @@ useEffect(() => {
             <h2 className="text-2xl font-semibold">Heyo!</h2>
             <p className="text-white">
               insert bio :/
-              test to make sure right repo
+              test to make sure right repo. Test2
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               White space
             </p>
