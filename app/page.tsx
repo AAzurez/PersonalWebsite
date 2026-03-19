@@ -8,9 +8,11 @@ export default function Home() {
   const [active,setActive] = useState("home")
   
   //Taskbar transions
-  useEffect(() => {
+useEffect(() => {
   const handleScroll = () => {
     const sections = ["bio", "projects", "expierence", "contact"]
+
+    let current = "bio"
 
     sections.forEach((section) => {
       const element = document.getElementById(section)
@@ -18,11 +20,13 @@ export default function Home() {
       if (element) {
         const rect = element.getBoundingClientRect()
 
-        if (rect.top <= 200 && rect.bottom >= 200) {
-          setActive(section)
+        if (rect.top <= 150) {
+          current = section
         }
       }
     })
+
+    setActive(current)
   }
 
   window.addEventListener("scroll", handleScroll)
@@ -35,26 +39,26 @@ export default function Home() {
 
       {/* Sidebar */}
       <div className="w-1/6 sticky top-0 h-screen bg-slate-900 text-white flex justify-center text-center items-center p-6">
-        <ul className="space-y-8 text-lg text-center items-center hover:text-blue-400">
+        <ul className="space-y-8 text-lg text-center items-center hover:text-blue-400 transition">
           <li>
-            <a href="#home">
+            <a href="#bio" className = "hover:text-blue-400 transition">
             {active === "bio" && "● "}
             Home
             </a>
           </li>
           <li>
-            <a href="#projects">
+            <a href="#projects" className="hover:text-blue-400 transition">
               {active === "projects" && "● "}
                Projects
             </a>
           </li>
           <li>
-            <a href="#expierence">
+            <a href="#expierence" className="hover:text-blue-400 transition">
             {active === "expierence" && "● "}
             About
             </a>
           </li>
-          <li><a href="#contact">
+          <li><a href="#contact" className="hover:text-blue-400 transition">
             {active === "contact" && "● "}
             Contact
             </a>
@@ -148,11 +152,13 @@ export default function Home() {
                 image = "github"
                 />
               </div>
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           </section>
 
           <section id="expierence" className="mt-10 max-w-xl text-left">
             <h2 className="text-2xl font-semibold text-white">Expierence</h2>
             <p className="text-white">
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
               Pegasus Place | July 2025 - Aug 2025
               <br/>
               Education Manager | Brooklyn, NY
